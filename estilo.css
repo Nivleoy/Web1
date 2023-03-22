@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Goblin+One&family=Oswald:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;1,700&family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background-image: url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+            
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 15px 9%;
+}
+.logo-contenedor img{
+    margin-top: 5px;
+    height: 40px;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+.logo-contenedor img:hover{
+    scale: 1.2;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    
+}
+
+li{
+    margin: 0px 25px;
+    font-size: 12px;
+}
+
+header .coc{
+    padding-left: 2%;
+    font-size: 21px;
+    color: #31446B;
+        
+}
+header .coc:hover{
+    color: #a823c0;
+}
+
+.logo-contenedor{
+    padding-right: 4%;
+}
+li a:hover{
+    color: #a823c0;
+    transition: all 0.5s;
+}
+
+.seccion1{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: start ;
+    align-items: center;
+    padding-top: 50px;
+    
+}
+
+.social-contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 12%;    
+    
+}
+.social-contenedor img{
+    height: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: #a842bb;
+    border-radius: 20px;
+    transform: all 0.5s;
+}
+.social-contenedor img:hover{
+    scale: 1.4;
+}
+
+.contenedor-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+
+.contenedor-home h1{
+    font-family: 'Goblin One', cursive;
+    font-size: 40px;
+    color: #31446B;
+    text-align: center;
+    
+}
+
+.contenedor-home h5{
+    padding-bottom: 25px;
+    color: black;
+}
+
+.contenedor-home h4{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.contenedor-home p{
+    padding-top: 30px;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-contenedor{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.btn-contenedor a{
+    align-content: center;
+    padding: 10px;
+    background-color: #31446B;
+    border-radius: 20px;
+    border: 2px solid;
+    
+}
+.btn-contenedor a:hover{
+    background-color: #904e9b;
+}
+
+.pekka-img{
+    height: 350px;
+    margin-top: 20px;
+    float: left;
+}
+
+.mover {
+    animation: mover 2s ease-in-out infinite alternate;
+}
+  
+@keyframes mover {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(40px);
+    }
+}
+
+@media (max-width:800px){
+    body{
+        display: flex;     
+        
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .pekka-contenedor{
+    display: none;
+    }
+    .seccion1{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        align-items: center;
+        margin-top: 40px;
+        
+    }
+    .social-contenedor{
+        order: 2;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+    }
+    .social-contenedor img{
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    h1{
+
+    }
+    .contenedor-home h5{
+        padding-bottom: 10px;
+    }
+    .contenedor-home h4{
+        padding-bottom: 0px;
+    }
+    .contenedor-home p{
+        padding-top: 10px;
+        font-size: 13px;
+        color: aliceblue;
+    }
+    .btn-contenedor{
+        margin-top: 50px;
+    }
+    .contenedor-home h1{
+        font-size: 40px;
+        
+    }
+    header ul{
+        margin: 15px 0px;
+        padding: 0;
+        margin-top: 30px;
+    }
+    header ul li{
+        margin: 0px 15px;
+        color: #31446B;
+    }
+    header ul li a{
+        color: #31446B;
+    }
+    .btn-contenedor{
+        margin-bottom: 35px;
+    }
+    header .coc{
+        color: rgb(255, 68, 0);
+        font-size: 20px;
+    }
+    .logo-contenedor{
+        position: absolute;
+        align-self: flex-end;
+        margin-top: 0;
+    }
+}
